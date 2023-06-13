@@ -1,3 +1,5 @@
+UI.Separator()
+UI.Label("MANA")
 if type(storage.healing) ~= "table" then
     storage.healing = {on=false, title="MANA", item=11862, min=50, max=50}
   end
@@ -14,8 +16,8 @@ if type(storage.healing) ~= "table" then
     storage.healing = newParams
     healingmacro.setOn(storage.healing.on)
   end)
-
-
+UI.Separator()
+UI.Label("HP")
   if type(storage.healing) ~= "table" then
     storage.healing = {on=false, title="HP", item=11862, min=50, max=50}
   end
@@ -32,3 +34,4 @@ if type(storage.healing) ~= "table" then
     storage.healing = newParams
     healingmacro2.setOn(storage.healing.on)
   end)
+UI.Separator()
