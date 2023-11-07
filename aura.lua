@@ -1,4 +1,4 @@
-local aura = 893
+local aura = 899
 
 local getOutfits = function()
     local pOutfit = player:getOutfit()
