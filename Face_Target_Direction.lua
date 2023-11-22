@@ -1,15 +1,17 @@
 macro(200, "Face Target", function()
+
     --Join Discord server for free scripts
     --https://discord.gg/RkQ9nyPMBH
     local target = g_game.getAttackingCreature()
     if target then
         local xDiff = target:getPosition().x > posx()
-            if not xDiff then return end
+print(target:getPosition().x,posx())
+
         local yDiff = target:getPosition().y > posy()
-            if not yDiff then return end
+
         local isXBigger = math.abs(target:getPosition().x - posx()) > math.abs(target:getPosition().y - posy())
-    if not isXBigger then return end
         local dir = player:getDirection()
+
         if xDiff and isXBigger then  
             if dir ~= 1 then turn(1) end
             return
