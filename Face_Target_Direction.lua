@@ -5,7 +5,7 @@ macro(200, "Face Target", function()
     local target = g_game.getAttackingCreature()
     if target then
         local xDiff = target:getPosition().x > posx()
-print(target:getPosition().x,posx())
+
 
         local yDiff = target:getPosition().y > posy()
 
