@@ -46,7 +46,7 @@ end
 if type(storage.powerItem) ~= "table" then
     storage.powerItem = {
         title = "Power Item",
-        item = 1111,  -- Reemplaza con el identificador real del ítem.
+        item = 11862,  -- Reemplaza con el identificador real del ítem.
         min =1,  -- Establece el valor mínimo de 'power' para usar el ítem.
         max = 100,  -- Establece el valor máximo de 'power' para usar el ítem.
         on = false
@@ -64,7 +64,7 @@ for i, healingInfo in ipairs({
         local hp = i <= 2 and player:getHealthPercent() or math.min(100, math.floor(100 * player:getMana() / player:getMaxMana()))
 
         if hp <= healingInfo.max and healingInfo.min <= hp then
-           use(healingInfo.item, player, subType)
+           use(healingInfo.item)
         end
     end)
 
@@ -78,11 +78,11 @@ end
 -- Macro específico para el ítem de 'power'
 local powerMacro = macro(20, function()
     local power = soul()  -- Reemplaza con el método correcto para obtener el 'power'.
-print(power, storage.powerItem.max,storage.powerItem.min)
+
 
     if power <= storage.powerItem.max and storage.powerItem.on then
 
-        use(storage.powerItem.item, player, subType)
+        use(storage.powerItem.item)
     end
 end)
 
