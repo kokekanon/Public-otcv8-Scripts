@@ -17,8 +17,8 @@ if type(storage.hpitem2) ~= "table" then
         title = "HP%",
         item = 11862,
         min = 0,
-        max = 50,
-        on = false
+        max = 45,
+        on = true
     }
 end
 
@@ -37,8 +37,8 @@ if type(storage.manaitem2) ~= "table" then
         title = "MP%",
         item = 11862,
         min = 0,
-        max = 50,
-        on = false
+        max = 20,
+        on = true
     }
 end
 
@@ -46,10 +46,10 @@ end
 if type(storage.powerItem) ~= "table" then
     storage.powerItem = {
         title = "Power Item",
-        item = 11862,  -- Reemplaza con el identificador real del ítem.
+        item = 11863,  -- Reemplaza con el identificador real del ítem.
         min =1,  -- Establece el valor mínimo de 'power' para usar el ítem.
-        max = 100,  -- Establece el valor máximo de 'power' para usar el ítem.
-        on = false
+        max = 5,  -- Establece el valor máximo de 'power' para usar el ítem.
+        on = true
     }
 end
 
