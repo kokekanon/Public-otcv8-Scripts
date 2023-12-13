@@ -2,7 +2,7 @@ local aura = 81
 
 local getOutfits = function()
     local pOutfit = player:getOutfit()
-    player:setOutfit({type = pOutfit.type, wings = 1, aura = storage.aura})
+    player:setOutfit({type = pOutfit.type, wings = 2, aura = storage.aura})
 end
 
 singlehotkey("Ctrl+x", "Get Outfits", function() getOutfits() end)
