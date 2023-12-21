@@ -1,5 +1,7 @@
 -- Auto Levitate
 --[[
+
+--test
 Description: Script will automatically use correct exani hur spell by running into the walls where you can exani hur
 
 How to use: Run into walls. If it doesn't levitate right away click the same walking key again to levitate
